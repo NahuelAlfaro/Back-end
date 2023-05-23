@@ -1,4 +1,3 @@
-
 package com.portfolio.pf.Security.Service;
 
 import com.portfolio.pf.Security.Entity.Usuario;
@@ -9,16 +8,23 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class UserDetailsImpl implements UserDetailsService {
+
+    private final UsuarioService usuarioService;
+
     @Autowired
-    UsuarioService usuarioService;
+    public UserDetailsImpl(UsuarioService usuarioService) {
+        this.usuarioService = usuarioService;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String nombreUsuario) throws UsernameNotFoundException {
-        Usuario usuario = usuarioService.getByNombreUsuario(nombreUsuario).get();
+        Optional<Usuario> usuarioOptional = usuarioService.getByNombreUsuario(nombreUsuario);
+        Usuario usuario = usuarioOptional.orElseThrow(() ->
+                new UsernameNotFoundException("Usuario no encontrado: " + nombreUsuario));
         return UsuarioPrincipal.build(usuario);
     }
-    
-    
 }
