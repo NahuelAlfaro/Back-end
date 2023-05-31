@@ -21,34 +21,28 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "https://frontend-20f91.web.app")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CEducacion {
     @Autowired
     Seducacion sEducacion;
     
-    @GetMapping("lista")
+    @GetMapping("/lista")
     public ResponseEntity<List<Educacion>> list(){
         List<Educacion> list = sEducacion.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
+    
+    
+    
     @GetMapping("/detail/{id}")
-    public ResponseEntity<Educacion> getById(@PathVariable("Id")int id){
-        if(!sEducacion.existsById(id)){
-            return new ResponseEntity(new Mensaje("Id inexistente"),HttpStatus.BAD_REQUEST);
-        }
+    public ResponseEntity<Educacion> getById(@PathVariable("id") int id){
+        if(!sEducacion.existsById(id))
+            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         Educacion educacion = sEducacion.getOne(id).get();
         return new ResponseEntity(educacion, HttpStatus.OK);
     }
-            
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> delete(@PathVariable("id")int id){
-        if(!sEducacion.existsById(id)){
-            return new ResponseEntity(new Mensaje("Id inexistente"),HttpStatus.NOT_FOUND);
-        }
-        sEducacion.delete(id);
-        return new ResponseEntity(new Mensaje("Eliminado correctamente"),HttpStatus.OK);
-    }
+          
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoEducacion dtoeducacion){
@@ -79,11 +73,23 @@ public class CEducacion {
         }
         
         Educacion educacion = sEducacion.getOne(id).get();
-        
         educacion.setNombreE(dtoeducacion.getNombreE());
         educacion.setDescripcionE(dtoeducacion.getDescripcionE());
         
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Actualizado correctamente"),HttpStatus.OK);
     }
+    
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable("id")int id){
+        if(!sEducacion.existsById(id)){
+            return new ResponseEntity(new Mensaje("Id inexistente"),HttpStatus.NOT_FOUND);
+        }
+        sEducacion.delete(id);
+        return new ResponseEntity(new Mensaje("Eliminado correctamente"),HttpStatus.OK);
+    }
+    
+    
+    
+    
 }

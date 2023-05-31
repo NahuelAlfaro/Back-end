@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 public class Seducacion {
     @Autowired
     REducacion rEducacion;
+    
     public List<Educacion> list(){
         return rEducacion.findAll();
     }
