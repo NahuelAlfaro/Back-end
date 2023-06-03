@@ -1,9 +1,12 @@
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Repository\RHys.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\MainSecurity.java
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Dto\dtoHys.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Service\UsuarioService.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Entity\UsuarioPrincipal.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Service\ImpPersonaService.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Controller\CEducacion.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\jwt\JwtTokenFilter.java
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Service\SHys.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Controller\AuthController.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Service\RolService.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Entity\Educacion.java
@@ -26,8 +29,10 @@ C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\j
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Controller\Mensaje.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Controller\CExperiencia.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Repository\IUsuarioRepository.java
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Entity\Hys.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Service\SExperiencia.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Entity\Usuario.java
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Controller\CHys.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Dto\JwtDto.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Dto\dtoExperiencia.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Repository\RExperiencia.java

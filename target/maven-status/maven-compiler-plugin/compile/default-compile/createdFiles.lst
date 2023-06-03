@@ -25,10 +25,15 @@ com\portfolio\pf\Controller\CEducacion.class
 com\portfolio\pf\Security\MainSecurity.class
 com\portfolio\pf\Dto\dtoExperiencia.class
 com\portfolio\pf\Repository\RExperiencia.class
+com\portfolio\pf\Entity\Hys.class
 com\portfolio\pf\Security\Repository\IUsuarioRepository.class
 com\portfolio\pf\Entity\Persona.class
+com\portfolio\pf\Repository\RHys.class
 com\portfolio\pf\Security\Controller\Mensaje.class
 com\portfolio\pf\Entity\Experiencia.class
+com\portfolio\pf\Controller\CHys.class
 com\portfolio\pf\Repository\IPersonaRepository.class
 com\portfolio\pf\Security\Entity\UsuarioPrincipal.class
+com\portfolio\pf\Dto\dtoHys.class
 com\portfolio\pf\Controller\PersonaController.class
+com\portfolio\pf\Service\SHys.class
