@@ -12,7 +12,6 @@ com\portfolio\pf\Dto\dtoEducacion.class
 com\portfolio\pf\Security\Dto\NuevoUsuario.class
 com\portfolio\pf\Security\Entity\Rol.class
 com\portfolio\pf\Security\Enums\RolNombre.class
-com\portfolio\pf\Interface\IPersonaService.class
 com\portfolio\pf\Service\SExperiencia.class
 com\portfolio\pf\Repository\REducacion.class
 com\portfolio\pf\Security\Entity\Usuario.class
@@ -36,4 +35,5 @@ com\portfolio\pf\Repository\IPersonaRepository.class
 com\portfolio\pf\Security\Entity\UsuarioPrincipal.class
 com\portfolio\pf\Dto\dtoHys.class
 com\portfolio\pf\Controller\PersonaController.class
+com\portfolio\pf\Dto\dtoPersona.class
 com\portfolio\pf\Service\SHys.class

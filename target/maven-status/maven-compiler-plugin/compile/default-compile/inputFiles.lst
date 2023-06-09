@@ -13,9 +13,9 @@ C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Entity\Edu
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Service\Seducacion.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Dto\dtoEducacion.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Entity\Rol.java
+C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Dto\dtoPersona.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Entity\Experiencia.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Controller\PersonaController.java
-C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Interface\IPersonaService.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\jwt\JwtProvider.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Security\Repository\IRolRepository.java
 C:\Users\PC\Documents\backend\Back-end\src\main\java\com\portfolio\pf\Entity\Persona.java
